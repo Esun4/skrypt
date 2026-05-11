@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Re-engagement · Skrypt AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F6F7F9;
+    --card: #FFFFFF;
+    --border: #E8EAEE;
+    --border-strong: #D8DBE0;
+    --ink: #0B0F14;
+    --ink-2: #4B5563;
+    --ink-3: #6B7280;
+    --ink-4: #9CA3AF;
+
+    --teal: #10B981;
+    --teal-700: #059669;
+    --teal-50: #ECFDF5;
+    --teal-100: #D1FAE5;
+
+    --amber: #D97706;
+    --amber-50: #FFF7ED;
+    --amber-100: #FEEBC8;
+
+    --red: #DC2626;
+    --red-50: #FEF2F2;
+    --red-100: #FEE2E2;
+
+    --blue: #2563EB;
+    --blue-50: #EFF6FF;
+    --blue-100: #DBEAFE;
+
+    --slate: #475569;
+    --slate-50: #F1F5F9;
+    --slate-100: #E2E8F0;
+
+    --clay: #B45309;
+    --clay-50: #FFFBEB;
+    --clay-100: #FEF3C7;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: 'Geist', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 14px;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+  .mono { font-family: 'Geist Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+  button { font-family: inherit; cursor: pointer; }
+  input, textarea { font-family: inherit; }
+
+  /* tiny scrollbars */
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-thumb { background: #DDE0E5; border-radius: 10px; border: 2px solid var(--bg); }
+  ::-webkit-scrollbar-thumb:hover { background: #C8CCD3; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="re-engagement/bundle.jsx"></script>
+</body>
+</html>
